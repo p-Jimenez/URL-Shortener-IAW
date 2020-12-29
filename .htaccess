@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteRule ^([A-Za-z0-9]){6}$ redirect.php?shortUrl=$0 [QSA]
+RewriteRule ^stats/([A-Za-z0-9]+){6}$ stats.php?shortUrl=$0 [QSA]
+RewriteRule ^index$ index.php [NC]
